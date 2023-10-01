@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connak - Non Profit Bootstrap 5 html</title>
+    <link rel="shortcut icon" href="images/connak-favicon-white.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body id="to-Top">
+    <header id="header">
+        <nav class="container">
+            <div class="row align-items-center">
+                <div class="col-2">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="./images/Connak-Foundation_Logo-removebg-preview.png" alt="Logo loading.." class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10">
+                    <nav class="navbar">
+                        <ul class="nav-menu">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item nav-submenu"><a href="causes.html" class="nav-link">Causes</a>
+                                <div class="submenu whiteShadow">
+                                    <div class="sub-item"><a href="causes.html">Causes</a></div>
+                                    <div class="sub-item"><a href="#">Causes Details</a><div>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-submenu"><a href="blog.html" class="nav-link">Blog</a>
+                                <div class="submenu whiteShadow">
+                                    <div class="sub-item"><a href="blog.html">Community Blog</a></div>
+                                    <div class="sub-item"><a href="#">Single Blogs</a><div>
+                                </div>
+                            </li>
+                            <li class="nav-item nav-submenu"><a href="pages.html" class="nav-link">Pages</a>
+                                <div class="submenu whiteShadow">
+                                    <div class="sub-item"><a href="pages.html">Event Details</a></div>
+                                    <div class="sub-item"><a href="volunter.html">Volunteer</a><div>
+                                </div>
+                            </li>
+                            <li class="active nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                        </ul>
+                        <div class="nav-cta d-flex align-items-center">
+                            <div id="hamburger-icon">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="giveSupport">
+                                <a href="#">Give Support <i class="fa-solid fa-arrow-right fa-sm ms-2 mt-1" style="color: #ffffff;"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="navOverlay"></div>
+    <div id="side-nav">
+        <a href="javascript:void(0)" class="close-btn">&times;</a>
+        <a href="index.html" class="gotohome"><i class="fa-solid fa-house fa-sm"></i></a>
+
+        <a href="about.html">About Us</a>
+        <button class="collapsible">Causes</button>
+        <div class="collapsible-content">
+            <a href="causes.html">Causes</a>
+            <a href="#">Causes Details</a>
+        </div>
+        <button class="collapsible">Blog</button>
+        <div class="collapsible-content">
+            <a href="blog.html">Community Blog</a>
+            <a href="#">Signle Blog</a>
+        </div>
+        <button class="collapsible">Pages</button>
+        <div class="collapsible-content">
+            <a href="pages.html">Event Details</a>
+            <a href="volunter.html">Volunteer</a>
+        </div>
+        <a href="contact.html">Contact Us</a>
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    }
+                    else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+    </div>
+
+    <div class="container-fluid page-banner-section">
+        <div class="page-bgOverlay"></div>
+        <img src="images/Working Picx/page-banner (2).png" alt="page-banner" class="page-banner-img">
+        <img src="images/Nigerian-map-removebg-preview.png" alt="page-map" class="page-banner-map img-fluid">
+
+        <div class="text-center" style="position: relative; z-index: 2;">
+            <h1 class="about-page-heading">Contact Us</h1>
+            <div class="d-flex justify-content-center align-items-center ">
+                <a href="index.html"><h5 class="page-link" style="color: var(--colorWhite);">Home //</h5></a> <h5 class="page-link page-title ms-2" style="color: var(--colorGold);">Contact</h5>
+            </div>
+        </div>
+    </div>
+
+    <section class="contact-page-section">
+        <div class="container-fluid">
+            <div class="contact-page-wrapper">
+                <div class="contact-page-form">
+                    <div class="row mb-5">
+                        <div class="col-12 f" style="position: relative;">
+                            <h5 class="contact-page-span mb-4">Find Us Now</h5>
+                            <h1 class="heading" id="volunteer">Get In Touch.</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1500.</p>
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mb-5 contact-form">
+                        <div class="col-12">
+                          <input type="text" class="form-control" placeholder="Name" aria-label="First name">
+                        </div>
+                        <div class="col-12">
+                          <input type="email" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="col-12">
+                            <input type="tel" class="form-control" placeholder="Phone" aria-label="Email">
+                        </div>
+                        <div class="col-12">
+                            <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="volunteer-page-link">
+                        <a href="#">Submit Now<i class="fa-solid fa-arrow-right fa-sm ms-2 mt-1" style="color: var(--colorWhite)"></i></a>
+                    </div> 
+                </div>
+
+                <div class="contact-page-map">
+
+                    <div class="contact-addresse">
+                        <div class="contact-column d-flex mb-3">
+                            <div class="img-circle img-circle-vanish me-5" style="position: relative;">
+                                <img src="./images/icons8-phone-100.png" alt="image..." class="img-fluid">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="heading" style="color: #ffffff;">Phone</h3>
+                                <div class="my-3">
+                                    <img src="./images/BRUSH&DESIGNS/white-design.png" alt="just a design" class="img-fluid">
+                                </div>
+                                <p style="color: #ffffff; font-weight: 500; font-size: 18px;">(+234) 907 415 404 1 <br>(+234) 907 415 404 1
+                                </p>
+                            </div>
+                        </div>
+                        <hr style="color: #ffffff; height: 1px;">
+                        <div class="contact-column d-flex mb-3">
+                            <div class="img-circle img-circle-vanish me-5" style="position: relative;">
+                                <img src="./images/icons8-email-96.png" alt="image..." class="img-fluid">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="heading" style="color: #ffffff;">Email</h3>
+                                <div class="my-3">
+                                    <img src="./images/BRUSH&DESIGNS/white-design.png" alt="just a design" class="img-fluid">
+                                </div>
+                                <p style="color: #ffffff; font-weight: 500; font-size: 18px;">connak@gmail.com <br>support@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <hr style="color: #ffffff; height: 1px;">
+                        <div class="contact-column d-flex mb-3">
+                            <div class="img-circle img-circle-vanish me-5" style="position: relative;">
+                                <img src="./images/icons8-address-96.png" alt="image..." class="img-fluid">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="heading" style="color: #ffffff;">Addresse</h3>
+                                <div class="my-3">
+                                    <img src="./images/BRUSH&DESIGNS/white-design.png" alt="just a design" class="img-fluid">
+                                </div>
+                                <p style="color: #ffffff; font-weight: 500; font-size: 18px;">Umuegwu Okpuala Afugiri <br>Umuahaia, Abia - Nigeria
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.8184947384293!2d7.463923474177639!3d5.5938185332699275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042dd3fd59cf2e9%3A0xca8b9448a275412b!2sConnak%20Foundation%20Umuahia!5e0!3m2!1sen!2sng!4v1694102119617!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="copyright-section" style="margin-bottom: 0 !important; width: 100%;">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="text-center">
+                        <p style="color: #c2c2c2;">Connak © <span class="year"></span>. Developed by Me With <i class="fa-solid fa-heart ms-2" style="color: #f92424;"></i> <i class="fa-solid fa-headphones-simple ms-2" style="color: #ffffff;"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section"> 
+        <div class="scrollUp-link">
+            <a href="#to-Top"><i class="fa-solid fa-arrow-up" style="color: var(--colorWhite)"></i></a>
+        </div>
+
+        <div class="container" style="position: relative;"> 
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-logo">
+                        <div style="margin-top: -1.5rem;">
+                            <a href="index.html">
+                                <img src="./images/Connak-Foundation_Logo-removebg-preview.png" alt="Logo loading.." class="">
+                            </a>
+                        </div>
+                        <p style="line-height: 25px;" class="mb-3">Lorem Ipsum is simply dummy text of the industry orem Ipsum has been the industry's since the when unknown</p>
+                        <h3 class="mb-1" style="color: var(--logoColor);">Total Raised:</h3>
+                        <h1 class="totalSum">$1,000</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer-gallery">
+                        <h2 class="gallery-span">Gallery</h2>
+                        <div class="row mb-2">
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery.jpg" alt="gallery" class="img-fluid">
+                                    <a href="#" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery (1).jpg" alt="gallery" class="img-fluid">
+                                    <a href="" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery (3).jpg" alt="gallery" class="img-fluid">
+                                    <a href="" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery (4).jpg" alt="gallery" class="img-fluid">
+                                    <a href="" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery (5).jpg" alt="gallery" class="img-fluid">
+                                    <a href="" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="gallery-image">
+                                    <img src="./images/Working Picx/gallery (6).jpg" alt="gallery" class="img-fluid">
+                                    <a href="" class="gallery-image-link">
+                                        <i class="fa-brands fa-instagram fa-xl" style="color: #fff;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 footer-column">
+                    <div class="footer-nav">
+                        <h2 class="quicklink-span">Quick Links</h2>
+                        <div class="row">
+                            <ul class="col-6">
+                                <li class="active-nav-footer footer-links mb-2"><a href="about.html">About Us</a></li>
+                                <li class="footer-links mb-2"><a href="#">Blog Post Terms</a></li>
+                                <li class="footer-links mb-2"><a href="#">Privacy Policy</a></li>
+                                <li class="footer-links mb-2"><a href="#">Conditions</a></li>
+                                <li class="footer-links mb-2"><a href="#">Faq</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <li class="footer-links mb-2"><a href="volunter.html">Be A Volunteer</a></li>
+                                <li class="footer-links mb-2"><a href="#">Medical Facilities</a></li>
+                                <li class="footer-links mb-2"><a href="#">Give Donation</a></li>
+                                <li class="footer-links mb-2"><a href="#">Donners</a></li>
+                                <li class="footer-links mb-2"><a href="#">Centers</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let Year = document.querySelector(".year");
+        let date = new Date();
+        let year = date.getFullYear()
+        Year.innerHTML = year;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
