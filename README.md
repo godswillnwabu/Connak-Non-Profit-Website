@@ -3,6 +3,7 @@ A donation/fundraising website for a non-profitable organisation.
 
 ## Table of contents
 * [General info](#general-info)
+* [Screenshot](#screenshot)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [CDN](#cdn)
@@ -13,6 +14,10 @@ A donation/fundraising website for a non-profitable organisation.
 
 ## General info 
 This project is a free will donation website where volunteers and visitors can donate their resources to the public and less privileged. It also exhibit some of their past and present contributions and collaboration so far.
+
+## Screenshot
+![Home-Page](https://github.com/godswillnwabu/Connak-Non-Profit-Website/blob/main/Annotation%202023-09-21%20130216.jpg)
+![footer](https://github.com/godswillnwabu/Connak-Non-Profit-Website/blob/main/Annotation%202023-09-21%20130402.jpg)
 
 ## Technologies 
 Project is created with: 
