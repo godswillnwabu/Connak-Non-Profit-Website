@@ -5,6 +5,7 @@ A donation/fundraising website for a non-profitable organisation.
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [CDN](#cdn)
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Acknowledgement](#acknowledgement)
@@ -21,7 +22,14 @@ Project is created with:
 * Sass/Less
 
 ## Setup 
-To run this project, you need to contact the owner via [LinkedIn](https://www.linkedin.com/in/godswill-nwabeke-719a09252): 
+To run this project;
+* Clone the repo or download the Zip file
+* Include bootstarp css and javascript files in head tag of your html, you can download the source files from the bootstrap official website or their CDN
+* Run the index.html file
+  
+## CDN
+* [Bootstrap CSS](https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css)
+* [Bootstrap JS](https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js)
 
 ## Usage
 This is just for a humanitarian purposes and elaborate more on the existence of this organisation.
