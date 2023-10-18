@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-Connak Non Profit Website
-# Connak Non Profit Website
-=======
 # Connak-Non-Profit-Website 
 A donation/fundraising website for a non-profitable organisation.
 
