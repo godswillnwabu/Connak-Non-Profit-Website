@@ -841,7 +841,7 @@ body {
     overflow-x: hidden !important;
     transition: background-color 1s;
 }
-header {
+#header {
     width: 100%;
     height: 100px;
     display: flex;
@@ -856,15 +856,11 @@ header {
     -o-transition: top 0.8s ease-in-out;
     -webkit-transition: top 0.8s ease-in-out;
 }
-header.fixedToTop {
+#header.fixedToTop {
     position: fixed;
-    top: -100px;
+    top: 0;
+    left: 0;
     width: 100%;
-    transition: top 0.8s ease-in-out;
-    -moz-transition: top 0.8s ease-in-out;
-    -o-transition: top 0.8s ease-in-out;
-    -webkit-transition: top 0.8s ease-in-out;
-    z-index: 100;
 }
 .navbar {
     display: flex;
@@ -1128,7 +1124,7 @@ header.fixedToTop {
     .giveSupport a {
         padding: 13px 23px !important;
     }
-    header {
+    #header {
         height: 80px;
     }
     .nav-logo {
@@ -1409,7 +1405,7 @@ section {
     top: -100px;
 }
 .hero-stripes {
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: -10px;
     z-index: -1000;

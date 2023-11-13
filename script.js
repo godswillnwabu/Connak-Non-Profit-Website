@@ -19,25 +19,20 @@ function closeMenu() {
 }
 
 // HEADER SLIDE DOWN ON SCROLL
-window.onscroll = function() {
-  scrollfunction()
-};
+const headerDiv = document.querySelector("#header");
 
-var headerDiv = document.querySelector("#header");
+window.addEventListener("scroll", function() {
+  const scrollHeight = window.scrollY;
+  const headerHeight = headerDiv.getBoundingClientRect().height;
 
-function scrollfunction() {
-  if (document.body.scrollTop > 80 || 
-      document.documentElement.scrollTop > 80) {
-          headerDiv.classList.add("fixedToTop");
-          document.querySelector(".hero-stripes").style.opacity = "0";
-          headerDiv.style.top = "0";
-      }
-  else {
-      headerDiv.classList.remove("fixedToTop");
-      // document.querySelector(".hero-stripes").style.opacity = "1";
-      headerDiv.style.top = "0";
+  if (scrollHeight > headerHeight) {
+    headerDiv.classList.add("fixedToTop");
+    document.querySelector(".hero-stripes").style.opacity = "0";
+  } else {
+    headerDiv.classList.remove("fixedToTop");
+    document.querySelector(".hero-stripes").style.opacity = "1";
   }
-}
+});
 
 const initAnimatedCounts = () => {
     const ease = (n) => {
