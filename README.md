@@ -1,6 +1,8 @@
 # Connak-Non-Profit-Website 
 A donation/fundraising website for a non-profitable organisation.
 
+You may visit our page - [here](https://godswillnwabu.github.io/Connak-Non-Profit-Website/)
+
 ## Table of contents
 * [General info](#general-info)
 * [Screenshot](#screenshot)
